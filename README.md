@@ -1,2 +1,3 @@
 # DjangoBasicAuth
-Basic User Registration and Login using Django (ACM Hack-In)
+
+Understanding Django Authentication and building a basic Login and Signup system
