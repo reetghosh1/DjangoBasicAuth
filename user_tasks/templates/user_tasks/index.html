@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Index Page</title>
+</head>
+<body>
+    <h1>This is the main index page</h1>
+    {% if user.is_authenticated %}
+    <h2>Welcome, {{ user.username }}</h2>
+    {% else %}
+    <h2>You are not logged in</h2>
+    <a href="/accounts/login">Click to login</a>
+    {% endif %}
+
+
+</body>
+</html>
