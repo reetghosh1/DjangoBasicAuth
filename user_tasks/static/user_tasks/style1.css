@@ -15,9 +15,14 @@ body *{
 h1{
     font-weight: normal;
     margin: 0;
+    text-align: center
 }
 
 a, a:hover, a:visited{
     color: hotpink;
     text-decoration: none;
+}
+
+p{
+    text-align: center;
 }

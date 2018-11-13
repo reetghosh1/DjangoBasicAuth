@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The Index Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'user_tasks/style1.css' %}" type="text/css">
 </head>
 <body>
     <h1>This is the main index page</h1>
@@ -13,7 +15,9 @@
     <p><a href="{% url 'logout' %}">Logout</a></p>
     {% else %}
     <h2>You are not logged in</h2>
-    <a href="/accounts/login">Click to login</a>
+    <p>
+    <a  href="/accounts/login">Click to login</a>
+    </p>
     {% endif %}
 
 
